@@ -1,0 +1,88 @@
+.contact{
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background: #f2f2f2;
+    position: relative;
+
+}
+
+.contact h1{
+    font-size: 40px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact h1::after{
+    content: '';
+    background: var(--blue-hover);
+    width: 170px;
+    height: 3px;
+    margin: 20px auto;
+}
+
+.the-data{
+    flex-basis: 40%;
+    padding: 10px;
+    margin: 35px;
+}
+
+.conct-center{
+    flex-basis: 40%;
+}
+
+.form-group{
+    padding: 7px;
+}
+
+.form-control{
+    border: none;
+    height: 2.4rem;
+    width: 100%;
+}
+
+::placeholder{
+    font-size: 15px;
+    color: #999;
+    padding-left: 10px;
+}
+
+.the-data .btn-1{
+    display: inline-block;
+    margin-top: 30px;
+    background: var(--blue-hover);
+    color: white;
+    padding: 10px 20px;
+    margin-left: 5px;
+    margin-bottom: 10px;
+    text-align: center;
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.btn-1:hover{
+    opacity: 0.5;
+}
+
+.follow{
+    background: white;
+    padding: 10px;
+    margin-bottom: 15px;
+    color: #999;
+}
+
+.follow  b {
+    margin: 10px 0;
+    color: #777;
+}
+
+.follow i{
+    margin: 10px;
+    color: var(--blue-hover);
+}

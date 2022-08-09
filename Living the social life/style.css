@@ -1,0 +1,270 @@
+body{
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.125rem;
+    font-weight: 300;
+}
+
+h1,
+h2,
+h3{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 400;
+    color: lightseagreen;
+    margin-top: 0;
+}
+
+h1{
+    font-size: 2rem;
+    margin: 0;
+}
+
+a{
+    color: goldenrod;
+    font-weight: bolder;
+}
+
+a:hover,
+a:focus{
+    color: darkblue;
+}
+
+strong{
+    font-weight: 700;
+}
+
+/* h1 Subtitle */
+.subtitle{
+    font-weight: 700;
+    color: purple;
+    font-size: .75rem;
+    margin: 0;
+}
+
+.article-title{
+    font-size: 1.5rem;
+}
+
+.article-read-more,
+.article-info{
+    font-size: 0.875rem;
+}
+
+.article-read-more{
+    color: royalblue;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.article-read-more:hover,
+.article-read-more:focus{
+    color: brown;
+    text-decoration: underline;
+}
+
+.article-info{
+    margin: 2em 0;
+}
+
+.widget-title{
+    font-size: 1.25rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 700;
+}
+
+.widget-recent-post-title{
+    font-size: 1em;
+    font-weight: 400;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: cornflowerblue;
+}
+
+.widget-recent-post{
+    /*padding: 1rem 0;*/
+    display: flex;
+    flex-direction: column;
+    border-bottom: 1.5px solid midnightblue;
+    margin-bottom: 1em;
+}
+
+.widget-recent-post:last-child{
+    border: 0;
+    margin: 0;
+}
+
+.container{
+    width: 90%;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.container-flex{
+    display: flex;
+    justify-content: space-between;
+    justify-content: space-between;
+}
+
+header{
+    background: rgba(135, 207, 235, 0.33);
+    padding: 2rem 0;
+    text-align: center;
+    margin-bottom: 3em;
+}
+
+footer{
+    text-align: center;
+    background: rgba(135, 207, 235, 0.659);
+    color: black;
+    padding: 2.5em 0;
+}
+
+/* @media (max-width: 675px) {
+    .container-flex{
+        flex-direction: column;
+    }
+
+    header{
+        text-align: center;
+    }
+} */
+
+/* main{
+    width: 75%;
+}
+
+aside{
+    width: 20%;
+}  */
+
+@media (min-width: 675px) {
+    .container-flex{
+        flex-direction: row;
+    }
+
+    main{
+        width: 70%;
+    }
+
+    aside{
+        width: 25%;
+        min-width: 200px;
+        margin-left: 1em;
+    }
+} 
+
+.curretn-page{
+    border-bottom: 1px solid purple;
+}
+
+.current-page{
+    text-decoration: underline 2.5px;
+} 
+
+nav ul{
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav li{
+    /* padding: 0 2rem; */
+    margin-left: 2em;
+}
+
+nav a{
+    text-decoration: none;
+    font-size: 1rem;
+    color: goldenrod;
+    padding: .25em 0;
+    font-weight: 700;
+}
+
+img{
+    max-width: 100%;
+    display: block;
+}
+
+.image-full{
+    max-height: 300px;
+    width: 100%;
+    object-fit: cover;
+    margin-bottom: 2em; 
+}
+
+/* articles */
+
+.article-featured{
+    border-bottom: 2px solid skyblue;
+    margin-bottom: 2em;
+    padding-bottom: 2em;
+    /* background: wheat; */
+}
+
+.article-recent{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2em;
+}
+
+.article-recent-main{
+    order: 2;
+}
+
+.article-recent-secondary{
+    order: 1;
+}
+
+/* @media (min-width: 550px) {
+    .article-recent-main{
+        margin-top: -2.5em;
+    }
+
+    .article-info{
+        text-align: right;
+    }
+} */
+
+@media (min-width: 675px) {
+    .article-recent{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .article-recent-main{
+        width: 68%;
+        /* isto kao i gore space- between padding-left: 2rem; */
+    }
+
+    .article-recent-secondary{
+        width: 30%;
+    }
+
+    .article-featured{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .article-image{
+        order: -2;
+    }
+
+    .article-info{
+        order: -1;
+    }
+}
+
+.widget-image{
+    order: -1;
+    width: 100%;
+    height: 100px;
+    object-fit: cover;
+}
+
+/* widgets */
+
+.sidebar-widget{
+    border: 15px solid rgba(135, 207, 235, 0.33);
+    margin-bottom: 2em;
+    padding: 1.1em;
+}

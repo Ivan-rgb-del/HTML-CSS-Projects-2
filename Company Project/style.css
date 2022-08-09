@@ -1,0 +1,24 @@
+:root{
+    --primary: white;
+    --secondary: #777;
+    --text: #999;
+    --dark: #333;
+    --light: #faf6f6;
+    --blue-hover: #0e5194;
+}
+
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background: var(--light);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    box-sizing: border-box;
+    padding-left: 5%;
+    padding-right: 5%;
+}

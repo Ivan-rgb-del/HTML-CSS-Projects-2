@@ -1,0 +1,97 @@
+.price-plan{
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background: #f2f2f2;
+    position: relative;
+}
+
+.price-plan h1{
+    font-size: 40px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.price-plan h1::after{
+    content: '';
+    display: block;
+    background: var(--blue-hover);
+    width: 170px;
+    height: 3px;
+    margin: 20px auto;
+}
+
+.price-box{
+    background: white;
+    margin-top: 5rem;
+    transition: 0.5s ease-in-out;
+}
+
+.price-box:hover{
+    box-shadow: 15px 20px 40px 0 var(--blue-hover);
+}
+
+.price-h{
+    background: var(--blue-hover);
+    padding: 20px 80px;
+    text-align: center;
+    color: var(--primary);
+}
+
+.price-h h2{
+    text-transform: uppercase;
+    padding-bottom: 10px;
+}
+
+.price-h p{
+    color: var(--text);
+    font-weight: bold;
+    font-size: 20px;
+    padding-bottom: 10px;
+}
+
+.space p{
+    margin-top: 30px;
+}
+
+.space p i{
+    margin-left: 5px;
+    color: green;
+}
+
+span{
+    color: var(--text);
+    font-size: 13px;
+}
+
+
+.price-button{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.price-button .btn-1{
+    display: inline-block;
+    margin-top: 30px;
+    background: var(--blue-hover);
+    color: white;
+    padding: 10px 30px;
+    margin-left: 5px;
+    margin-bottom: 10px;
+    text-align: center;
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.btn-1:hover{
+    opacity: 0.5;
+}
